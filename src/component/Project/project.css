@@ -1,0 +1,53 @@
+.project_container{
+    background-color: rgb(53, 52, 51);
+    height: 100vh;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.project_content{
+   display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   -ms-flex-align: center;
+}
+.project_content > h2{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.mern-project > a > img{
+    height: 120px;
+    width: 510px;
+    margin: 45px 20px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px ){
+    .project_container{
+        background-color: rgb(19, 18, 18);
+        height: 100vh;
+        background-position:center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .project_content{
+       display: flex;
+       flex-direction:row;
+       flex-wrap: wrap;
+       -ms-flex-align: center;
+    }
+    .project_content > h2{
+        color: rgb(0, 0, 0);
+        font-size: 11px;
+    }
+    .mern-project > a > img{
+        height: 100px;
+        width: 250px;
+        margin: 10px 75px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}

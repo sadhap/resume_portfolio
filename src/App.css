@@ -1,0 +1,177 @@
+* {
+    font-family: "Roboto";
+  }
+  body {
+    background-color: #ffffff;
+  }
+  
+footer{
+   background-color: black;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   z-index: 1000;
+   box-shadow:black;
+   height: 35px;
+   display: flex;
+   box-shadow: 0 19px 28px rgba(216, 216, 216, 0.3), 0 10px 12px rgba(0,0,0,0.22);
+}
+footer > .contact {
+display: flex;
+color: #ffffff;
+justify-content: center;
+}
+.contact > ul > li{
+  display: flex;
+  color:green;
+  margin-left: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact > ul > li>a>img:hover{
+  background-color: #f7f4f4;
+  border-radius: 50px;
+  transform:  scale(1.45);
+}
+ ul > li > a >img{
+  height: 25px;
+  width: 25px;
+  border: none;
+  display: flex;
+  border-radius: 50px;
+  background-color: wheat;
+  /* margin-left: 10px; */
+  margin-top: 1px;
+  transition: transform 100ms ease-in ;
+}
+ footer>.contact > ul > li> a{
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 12px;
+  
+}
+.email{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.email > h3{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+.email > .mail{
+
+  color: rgb(255, 252, 252);
+  font-weight: 200;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.email > .phn{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 238, 238);
+  font-weight: 200;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.email > .conme{
+  background-color:red;
+}
+
+
+
+
+/* mobile respose css */
+@media only screen and (max-width:900px)
+{
+  *{
+      box-sizing: border-box;
+}
+  html{
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255)238, 247, 247);
+  }
+footer{
+  background-color: black;
+  height: 10%;
+  width: 100%;
+  color: white;
+  box-shadow:black;
+  box-shadow: 0 19px 28px rgba(216, 216, 216, 0.3), 0 10px 12px rgba(0,0,0,0.22);
+}
+footer>.contact > ul>li{
+ display:flex;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-70%, -50%);
+}
+footer>.contact > ul > li> a{
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -10%);
+  /* padding: 25px 0px; */
+}
+  .contact > ul > li>a>img:hover{
+    background-color: #f7f4f4;
+    border-radius: 50px;
+    transform:  scale(2.45);
+  }
+   ul > li > a >img{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 100ms ease-in ;
+  }
+
+  /* .email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+  } */
+  .email > .mail{
+    display: none;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 252, 252);
+    font-weight: 200;
+    margin-left: 55px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .email > .phn{
+    display:none;
+    color: rgb(255, 238, 238);
+    font-weight: 200;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .email > .conme{
+    background-color:red;
+    display: none;
+  }
+}
+/* We couldn’t deploy your site. Check out our Build docs for tips on 
+troubleshooting your build, and if that doesn’t help, please review our Support
+Guide on extended debugging before asking us for debugging advice. */

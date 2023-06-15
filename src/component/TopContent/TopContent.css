@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap');
+.topcontent{
+ color: rgb(0, 0, 0);   
+}
+.topcontent_container{
+    position: absolute;
+    top: 250px;
+    right: 140px;
+}
+.topcontent_container > p{
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.topcontent_container > a > button{
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.topcontent_container > h1{
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px #f0e7e7;
+    color: rgb(0, 0, 0);
+}
+.topcontent_downloadbutton{
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.topcontent_workbutton{
+    color: black;
+    border:1px solid black !important;
+    border-color: black;
+    background-color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 9px 35px;
+    font-weight: 400;
+    opacity: 20px;
+    border-radius: 2px;
+}
+.topcontent_downloadbutton:hover{
+    background-color: green;
+    color: white;
+    font-weight: 400;
+
+}
+.topcontent_workbutton:hover{
+    background-color: aqua;
+}
+
+/* css mobile response */
+@media only screen and (max-width: 900px ){
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap');
+  
+       .topcontent{
+        color: rgb(0, 0, 0);  
+        transform: translate(15%, -20%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction:column;
+        /* transform:translateX(25%); */
+        position: absolute;
+        gap: 25px;
+        /* background-attachment: fixed; */
+       }
+       .topcontent>.myimg{
+        /* margin-top: 100px; */
+        height:300px;
+        width:450px;
+        transform: translate(-5%, 60%);
+       }
+       .topcontent_container{
+        transform: translate(20%, 0%);
+           gap: 20px;
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+       }
+       .topcontent_container > p{
+           letter-spacing: 1px;
+           position:absolute;
+           font-family: "Alata",sans-serif;
+           margin-top:50px;
+           margin-bottom:0px;
+           padding-right: 10px;
+          
+       }
+       .topcontent_container > a >button{
+           position: absolute;
+           margin-top: 125px;
+           border: none;
+           border-radius: 2px;
+           outline: none;
+           text-align: center;
+       }
+       .topcontent_container > h1{
+           font-size: 16px;
+           font-family: "Alata",sans-serif;
+           color: rgb(0, 0, 0);
+           font-weight: 900;
+           margin-left:0;
+           /* position: absolute; */
+       }
+       .topcontent_downloadbutton{
+           position: inherit; 
+           color: white;
+           background-color: rgb(0, 4, 244);
+           font-size: 12px;
+           width: 115px;
+           text-align: center;
+           padding: 15px 5px;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font-weight: 300;
+           cursor: pointer;
+           border-radius: 12px;
+       }
+       .topcontent>.work-link > .topcontent_workbutton{
+        /* top: 100px; */
+        transform: translate(40%, 400%);
+        position:absolute;
+        background-attachment: fixed;
+        height: 55px;
+        width: 15rem;   
+        margin-left: -250px;   
+        justify-content: center;     
+        align-items:center;
+        text-align: center;
+        color: #000000;
+        background-color: rgb(248, 240, 240);
+       }
+       .topcontent_downloadbutton:hover{
+           background-color: green;
+           color: white;
+           font-weight: 400;
+       
+       }
+       .topcontent_workbutton:hover{
+           background-color: aqua;
+       }
+       
+}
